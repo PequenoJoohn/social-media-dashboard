@@ -1,0 +1,13 @@
+{
+  "name": "social-media-dashboard-with-theme-switcher-master",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "jonathanlm <jonathan.matos@frncubo.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "sass --watch scss/styles.scss css/styles.css"
+  },
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}

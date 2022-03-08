@@ -1,0 +1,71 @@
+.dark-mode {
+    background-color: var(--very-dark-blue);
+    header {
+        &::before {
+            background-color: var(--very-dark-blue-top);
+        }
+
+        nav {
+            h1 {
+                color: var(--white-text);
+            }
+            p {
+                color: var(--desaturated-blue-text);
+            }
+        }
+
+        .darkmode {
+            li {
+                p {
+                    color: var(--white-text);
+                }
+            }
+        }
+    }
+
+    .container {
+        .social {
+            background-color: var(--dark-desaturated-blue-bg);
+
+            &:hover {
+                background-color: var(--toggle-dark);
+            }
+            &-account {
+                p {
+                    color: var(--desaturated-blue-text);
+                }
+            }
+            &-size {
+                color: var(--white-text);
+            }
+
+            &-type {
+                color: var(--desaturated-blue-text);
+            }
+        }
+    }
+
+    .overview {
+        &-title {
+            color: var(--white-text);
+        }
+
+        &-list {
+            &-status {
+                background-color: var(--dark-desaturated-blue-bg);
+                &:hover {
+                    background-color: var(--toggle-dark);
+                }
+                &--title {
+                    color: var(--desaturated-blue-text);
+                }
+
+                &--size {
+                    h3 {
+                        color: var(--white-text);
+                    }
+                }
+            }
+        }
+    }
+}

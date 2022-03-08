@@ -1,0 +1,97 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &::before {
+        content: "";
+        height: 250px;
+        background-color: var(--background);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    nav {
+        h1 {
+            color: var(--dark-grayish-blue-text);
+        }
+        p {
+            color: var(--dark-grayish-blue-text);
+        }
+    }
+
+    hr {
+        display: none;
+    }
+
+    .darkmode {
+        li {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-right: 1rem;
+                color: var(--dark-grayish-blue-text);
+                font-weight: bold;
+            }
+
+            label {
+                background-color: var(--toggle-light);
+                width: 65px;
+                height: 30px;
+                border-radius: 25px;
+                display: block;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 23px;
+                    height: 23px;
+                    top: 3.5px;
+                    right: 3px;
+                    background-color: var(--light-grayish-blue-bg);
+                    border-radius: 25px;
+                    transition: 0.3s all;
+                }
+            }
+
+            input[type="checkbox"] {
+                display: none;
+                &:checked ~ label {
+                    background-image: var(--toggle-dark);
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        transform: translateX(-35px);
+                        background-color: var(--very-dark-blue);
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        display: block;
+
+        hr {
+            display: block;
+            margin: 1.5rem 0 1rem 0;
+            color: var(--light-grayish-blue-bg);
+        }
+
+        .darkmode {
+           li {
+            display: flex;
+            justify-content: space-between;
+           }
+        }
+    }
+}

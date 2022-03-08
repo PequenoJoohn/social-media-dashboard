@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--inter);
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h4, h5, h6, strong {
+    font-weight: 700;
+}
+
+p, li, span {
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
